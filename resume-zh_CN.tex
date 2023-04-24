@@ -2,6 +2,8 @@
 % !TEX encoding = UTF-8 Unicode
 % !Mode:: "TeX:UTF-8"
 
+% ONLINE https://www.overleaf.com/project/644652bbe900dd5bbd54ddca
+
 \documentclass{resume}
 \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 % \usepackage{NotoSansSC_external}
@@ -25,19 +27,18 @@
 \textit{学士}\ 药物分析
 
 \section{\faUsers\ 工作经历}
-字节跳动 2021.01 - 至今
-前端开发 (CloudIDE 方向)
+\datedsubsection{\textbf{字节跳动} \space 前端开发 (CloudIDE 方向)}{2021.01 - 至今}
+% \role{TypeScript, React, nodejs}{前端开发 (CloudIDE 方向)}
 
 %region CloudIDE 前端场景解决方案产出
-\datedsubsection{\textbf{CloudDev 项目} 北京}{}
+\datedsubsection{CloudDev 项目}{}
 \role{TypeScript, React, Go, Java}{插件侧研发负责人}
 
 \begin{onehalfspacing}
 CloudDev 项目插件侧架构设计
 \begin{itemize}
-  \item 完成对 CloudDev 项目插件侧整体的架构设计。为了实现底层能力在双端插件的复用，并基于经验抽象出 DSP 协议，由 CLI 实现底层能力并通过 DSP 向插件侧输出。形成了能力层和表现层分层的结构。
-  \item 项目工程化：使用 rush 管理 js 侧项目 monorepo，插件侧使用 esbuild 作为构建工具，webview 部分使用 vite 构建。基于 vscode 提供的各配置内容，实现项目的一键启动调试能力，降低新人上手成本。配置项目构建发布自动化流程，完成合码后即可全自动构建发布。
-  \item 完成了 CloudDev 项目 V1 版本的开发
+  \item 能力层和视图层分层: 由于不同 IDE 间的交互逻辑差异极大, 同时插件开发语言也不同, 所以在视图层实现跨插件的能力复用基本不可能. 但是能力层实现逻辑类似, 因此可以将插件分为能力层和视图层两个部分, 使得能力层的复用成为可能
+  \item \(Dev Server Protocol\): 为了实现底层能力在双端插件的复用，基于经验抽象出 DSP 协议，由 CLI 实现底层能力并通过 DSP 向插件侧输出
 \end{itemize}
 \end{onehalfspacing}
 
@@ -56,20 +57,20 @@ CloudDev 项目插件侧架构设计
 %endregion
 
 %region CloudIDE 前端场景解决方案产出
-\datedsubsection{\textbf{CloudIDE 前端场景解决方案产出}}{}
+\datedsubsection{CloudIDE 前端场景解决方案产出}{}
 % \role{产品方案}{}
 \begin{onehalfspacing}
 通过梳理前端研发在开发阶段的全部流程，分析 CloudIDE 可以介入提升用户研发效率和体验的部分，从而产出面向前端场景的 CloudIDE 解决方案
 \begin{itemize}
-  \item 云端代理: 基于公司内的流量分发体系, 将用户调试启动的 dev-server 注册至线上 page-server 的泳道环境中, 方便用户的自测调试或提供给 QA&PM 预览
-  \item MR&CR in IDE: 将 MR&CR 能力使用插件实现, 使用户在 IDE 中更为沉浸式的完成开发完整流程, 确立 IDE 作为开发阶段核心入口的地位
+  \item 云端代理: 基于公司内的流量分发体系, 将用户调试启动的 dev-server 注册至线上 page-server 的泳道环境中, 方便用户的自测调试或提供给 QA\&PM 预览
+  \item MR\&CR in IDE: 将 MR\&CR 能力使用插件实现, 使用户在 IDE 中更为沉浸式的完成开发完整流程, 确立 IDE 作为开发阶段核心入口的地位
   \item 预构建: 支持用户配置自定义安装构建脚本, 在用户创建环境前完成下载依赖、构建项目的行为, 保证用户创建 CloudIDE 后可以极速进行开发
 \end{itemize}
 \end{onehalfspacing}
 %endregion
 
 %region VSCode 项目
-\datedsubsection{\textbf{VSCode 项目}}{}
+\datedsubsection{VSCode 项目}{}
 \role{Typescript, Node.js}{项目核心开发成员}
 \begin{onehalfspacing}
 % 优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
@@ -82,7 +83,7 @@ CloudDev 项目插件侧架构设计
 %endregion
 
 %region 其他工作内容
-\datedsubsection{\textbf{其他工作内容}}{}
+\datedsubsection{其他工作内容}{}
 % \role{Typescript, Node.js}{项目核心开发成员}
 \begin{onehalfspacing}
 % 优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
