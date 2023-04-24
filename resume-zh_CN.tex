@@ -13,50 +13,86 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{酒嘉年}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
- 
+  \email{jojiu7609@outlook.com} \textperiodcentered\ 
+  \phone{(+86) 166-3892-3406} \textperiodcentered\ 
+  \github[Ninglo]{https://github.com/Ninglo}}
+
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\datedsubsection{\textbf{中国药科大学}, 南京}{2018.09 - 2022.06}
+\textit{学士}\ 药物分析
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
-\end{itemize}
+\section{\faUsers\ 工作经历}
+字节跳动 2021.01 - 至今
+前端开发 (CloudIDE 方向)
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
+%region CloudIDE 前端场景解决方案产出
+\datedsubsection{\textbf{CloudDev 项目} 北京}{}
+\role{TypeScript, React, Go, Java}{插件侧研发负责人}
+
 \begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
+CloudDev 项目插件侧架构设计
 \begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
+  \item 完成对 CloudDev 项目插件侧整体的架构设计。为了实现底层能力在双端插件的复用，并基于经验抽象出 DSP 协议，由 CLI 实现底层能力并通过 DSP 向插件侧输出。形成了能力层和表现层分层的结构。
+  \item 项目工程化：使用 rush 管理 js 侧项目 monorepo，插件侧使用 esbuild 作为构建工具，webview 部分使用 vite 构建。基于 vscode 提供的各配置内容，实现项目的一键启动调试能力，降低新人上手成本。配置项目构建发布自动化流程，完成合码后即可全自动构建发布。
+  \item 完成了 CloudDev 项目 V1 版本的开发
 \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
 \begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+项目工程化建设
 \begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+  \item 构建发布: 插件侧使用 esbuild 作为构建工具、webview 部分使用 vite 构建配置项目构建发布自动化流程，完成合码后即可全自动构建发布
+  \item 调试能力: 基于 vscode 提供的各配置内容，实现项目的一键启动调试能力，降低新人上手成本
+  \item monorepo: 使用 rushjs 管理 js 侧项目 monorepo
 \end{itemize}
 \end{onehalfspacing}
+
+\begin{onehalfspacing}
+完成 CloudDev 项目 V1 版本开发
+\end{onehalfspacing}
+%endregion
+
+%region CloudIDE 前端场景解决方案产出
+\datedsubsection{\textbf{CloudIDE 前端场景解决方案产出}}{}
+% \role{产品方案}{}
+\begin{onehalfspacing}
+通过梳理前端研发在开发阶段的全部流程，分析 CloudIDE 可以介入提升用户研发效率和体验的部分，从而产出面向前端场景的 CloudIDE 解决方案
+\begin{itemize}
+  \item 云端代理: 基于公司内的流量分发体系, 将用户调试启动的 dev-server 注册至线上 page-server 的泳道环境中, 方便用户的自测调试或提供给 QA&PM 预览
+  \item MR&CR in IDE: 将 MR&CR 能力使用插件实现, 使用户在 IDE 中更为沉浸式的完成开发完整流程, 确立 IDE 作为开发阶段核心入口的地位
+  \item 预构建: 支持用户配置自定义安装构建脚本, 在用户创建环境前完成下载依赖、构建项目的行为, 保证用户创建 CloudIDE 后可以极速进行开发
+\end{itemize}
+\end{onehalfspacing}
+%endregion
+
+%region VSCode 项目
+\datedsubsection{\textbf{VSCode 项目}}{}
+\role{Typescript, Node.js}{项目核心开发成员}
+\begin{onehalfspacing}
+% 优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+\begin{itemize}
+  \item VSCode 能力加强：基于公司内场需求，对 VSCode 做定制化能力的开发
+  \item 补全 VSCode 并未开源的周边生态能力（配置同步后端服务、插件市场等）
+  \item 适配公司内部基建，确保 vscode-server 在公司内部环境内正常的运行和使用
+\end{itemize}
+\end{onehalfspacing}
+%endregion
+
+%region 其他工作内容
+\datedsubsection{\textbf{其他工作内容}}{}
+% \role{Typescript, Node.js}{项目核心开发成员}
+\begin{onehalfspacing}
+% 优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+\begin{itemize}
+  \item CloudIDE 环境控制台、环境启动中转页页面开发 \(React\)
+  \item 补全 VSCode 并未开源的周边生态能力（配置同步后端服务、插件市场等）\(nodejs\)
+  \item Cloud Workspace 插件开发，支持用户使用 native VSCode 连接 CloudIDE 容器 \(nodejs\)
+\end{itemize}
+\end{onehalfspacing}
+%endregion
 
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
@@ -68,21 +104,19 @@ xxx后端开发
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
+  \item 熟练掌握HTML5、CSS3、JavaScript
+  \item 熟练掌握React库，熟悉hooks、mobx等React生态中的状态管理方案
+  \item 熟悉Node.js和Go语言，有生产环境项目落地经验
 \end{itemize}
 
-\section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
+% \section{\faHeartO\ 获奖情况}
+% \datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
+% \datedline{其他奖项}{2015}
 
 \section{\faInfo\ 其他}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+  \item VSCode Contributor: https://github.com/microsoft/vscode/pull/160863
 \end{itemize}
 
 %% Reference
